@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnage World - Histoire</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>L'Histoire de Carnage</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Accueil</a>
+            <a href="{{ url_for('snir') }}">Carnage</a>
+            <a href="{{ url_for('etudessup') }}">Études Sup</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>La Naissance d'un Justicier</h2>
+        <p>Dans un monde où la violence règne, un justicier se lève pour rétablir l'ordre. Son nom est Carnage, un héros né des cendres de la destruction. Il a vu sa ville, Ciranor, sombrer dans le chaos, et a décidé de prendre les choses en main.</p>
+        <p>Avec une détermination sans faille, Carnage a commencé à traquer les criminels qui terrorisaient les innocents. Son parcours est semé d'embûches, mais chaque victoire le rapproche de son objectif : restaurer la paix dans sa ville.</p>
+        <img src="{{ url_for('static', filename='images/carnage.jpg') }}" alt="Carnage" style="width:300px;">
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Carnage World. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

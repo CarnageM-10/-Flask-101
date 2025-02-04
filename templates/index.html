@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnage World - Accueil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans le monde du carnage</h1>
+        <nav>
+            <a href="{{ url_for('ciel') }}">Histoire</a>
+            <a href="{{ url_for('snir') }}">Carnage</a>
+            <a href="{{ url_for('etudessup') }}">Études Sup</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Introduction</h2>
+        <p>Dans un monde où la violence règne, un justicier se lève pour rétablir l'ordre. Son nom est Carnage, un héros né des cendres de la destruction...</p>
+        <img src="{{ url_for('static', filename='images/carnage.jpg') }}" alt="Carnage" style="width:300px;">
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Carnage World. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

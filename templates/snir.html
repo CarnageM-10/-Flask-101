@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnage World - Compagnons</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Les Compagnons de Carnage</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Accueil</a>
+            <a href="{{ url_for('ciel') }}">Histoire</a>
+            <a href="{{ url_for('etudessup') }}">Études Sup</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Faucon et Tank</h2>
+        <p>Faucon, l'archer fidèle et précis, est un ancien assassin qui a décidé de mettre ses compétences au service de la justice. Son arc est son meilleur ami, et il ne rate jamais sa cible.</p>
+        <img src="{{ url_for('static', filename='images/faucon.jpg') }}" alt="Faucon" style="width:300px;">
+        
+        <p>Tank, quant à lui, est un mercenaire robuste et costaud. Ancien soldat, il utilise sa force pour protéger les plus faibles. Ensemble, ils forment une équipe redoutable, nettoyant les rues de Ciranor des criminels qui y sévissent.</p>
+        <img src="{{ url_for('static', filename='images/tank.jpg') }}" alt="Tank" style="width:300px;">
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Carnage World. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

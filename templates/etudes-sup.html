@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnage World - Études Sup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Études Sup</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Accueil</a>
+            <a href="{{ url_for('ciel') }}">Histoire</a>
+            <a href="{{ url_for('snir') }}">Carnage</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Devenir Carnage</h2>
+        <p>Pour devenir Carnage, le justicier sanglant, il faut passer par plusieurs étapes cruciales :</p>
+        <ol>
+            <li><strong>Formation :</strong> Apprendre les arts martiaux et le maniement des armes.</li>
+            <li><strong>Épreuves :</strong> Affronter des adversaires redoutables pour prouver sa valeur.</li>
+            <li><strong>Engagement :</strong> S'engager à protéger les innocents et à combattre le mal.</li>
+            <li><strong>Alliances :</strong> Se lier avec des compagnons de confiance comme Faucon et Tank.</li>
+        </ol>
+        <p>Chaque étape est essentielle pour forger un héros capable de faire face aux défis du monde du carnage.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Carnage World. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
